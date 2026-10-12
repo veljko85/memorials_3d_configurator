@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="./vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>gravestones_test_dev</title>
+  <!-- css -->
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+  <script type="module" crossorigin src="./assets/index-mdivZpz2.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-1rAWrnvP.css">
+</head>
+
+<body>
+
+  <div id="app">
+
+    <div id="coverScreen"></div>
+
+    <!-- loading spinnerrrrr -->
+    <div id="loadingSpinner">
+      <div id="loadingSpinnerBorderMain" class="loadingSpinnerBorder"></div>
+      <!-- <div id="loadingPercentages">0%</div> -->
+      <div id="loadingLogo"></div>
+      <!-- <div id="loadingLogo" style="background-image: url(jasperosso_logo_txt_black.svg)"></div> -->
+    </div>
+
+    <div id="mainContainer">
+
+      <!-- RENDER CANVAS -->
+      <div id="renderCanvasContainer">
+        <div id="loadingForCanvas">
+          <div id="loadingSpinnerBorderCanvas" class="loadingSpinnerBorder"></div>
+        </div>
+        <canvas id="renderCanvas"></canvas>
+      </div>
+
+      <!-- MENU CONTAINER -->
+      <div id="menuContainer">
+
+        <!-- MENU HEADER -->
+        <div id="menuHeaderContainer">
+          <div id="menuHeader">
+            <div class="menuHeaderButton active" id="menuHeaderButtonGravestones">GRAVESTONES</div>
+            <div class="menuHeaderButton" id="menuHeaderButtonVases">VASES</div>
+            <div class="menuHeaderButton" id="menuHeaderButtonPlaques">PLAQUES</div>
+            <div class="menuHeaderButton" id="menuHeaderButtonText">TEXT</div>
+          </div>
+        </div>
+
+        <!-- MENU CONTENT -->
+        <div id="menuContentContainer">
+          <div id="menuContent">
+
+            <!-- GRAVESTONES -->
+            <div id="menuContentGravestones" class="menuContentSection active">
+              <div id="menuContentGravestonesHeader" class="menuContentSectionHeader">GRAVESTONES</div>
+
+              <div id="menuContentGravesstnesBody" class="menuContentSectionBody">
+
+                <!-- SELECTION CONTAINER GRAVESTONES SECTION -->
+                <div id="gravestoneSelectionContainer" class="selectionContainer">
+
+                  <div id="gravestoneSelectionTypeTitle" class="selectionTypeTitle">Choose a gravestone</div>
+                  <div class="selectionItemContainer">
+                    <div id="gravestoneOne" class="selectionItem gravestoneSelectionItem active">
+                      <div class="selectionItemImage" style="background-image: url(images/1.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">Gravestone 1</div>
+                  </div>
+                  <div class="selectionItemContainer">
+                    <div id="gravestoneTwo" class="selectionItem gravestoneSelectionItem">
+                      <div class="selectionItemImage" style="background-image: url(images/2.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">Gravestone 2</div>
+                  </div>
+                  <div class="selectionItemContainer">
+                    <div id="gravestoneThree" class="selectionItem gravestoneSelectionItem">
+                      <div class="selectionItemImage" style="background-image: url(images/3.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">Gravestone 3</div>
+                  </div>
+
+                </div>
+
+                <!-- SELECTION CONTAINER MATERIALS SECTION -->
+                <div id="materialsSelectionContainer" class="selectionContainer">
+
+                  <div id="materialsSelectionTypeTitle" class="selectionTypeTitle">Choose a material</div>
+
+                  <div class="selectionItemContainer">
+                    <div id="materialColorOne" class="selectionItem materialColorSelectionItem">
+                      <div class="selectionItemImage"
+                        style="background-image: url(images/charcoal_grey_granite_albedo_icon.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">Charcoal Grey</div>
+                  </div>
+                  <div class="selectionItemContainer">
+                    <div id="materialColorTwo" class="selectionItem materialColorSelectionItem">
+                      <div class="selectionItemImage"
+                        style="background-image: url(images/blue_perl_granite_albedo_icon.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">Blue Perl</div>
+                  </div>
+                  <div class="selectionItemContainer">
+                    <div id="materialColorThree" class="selectionItem materialColorSelectionItem active">
+                      <div class="selectionItemImage"
+                        style="background-image: url(images/black_pearl_granite_albedo_icon.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">Black Pearl</div>
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <!-- VASES -->
+            <div id="menuContentVases" class="menuContentSection">
+              <div id="menuContentVasesHeader" class="menuContentSectionHeader">VASES</div>
+
+              <div id="menuContentVasesBody" class="menuContentSectionBody">
+
+                <!-- SELECTION CONTAINER VASES SECTION -->
+                <div id="vaseSelectionContainer" class="selectionContainer">
+
+                  <div id="vaseSelectionTypeTitle" class="selectionTypeTitle">Choose a vase</div>
+
+                  <div class="selectionItemContainer">
+                    <div id="vaseNone" class="selectionItem vaseSelectionItem active">
+                      <div class="selectionItemImage" style="background-image: url(images/no.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">No Vase</div>
+                  </div>
+                  <div class="selectionItemContainer">
+                    <div id="vaseOne" class="selectionItem vaseSelectionItem">
+                      <div class="selectionItemImage" style="background-image: url(images/1.jpg);"></div>
+                    </div>
+                    <div class="selectionItemTitle">Vase 1</div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- PLAQUES -->
+            <div id="menuContentPlaques" class="menuContentSection">
+              <div id="menuContentPlaquesHeader" class="menuContentSectionHeader">PLAQUES</div>
+
+              <div id="menuContentPlaquesBody" class="menuContentSectionBody">
+
+                <!-- SELECTION CONTAINER PLAQUES SECTION -->
+                <div id="plaqueSelectionContainer" class="selectionContainer">
+
+                  <div id="plaqueSelectionTypeTitle" class="selectionTypeTitle">Choose a plaque</div>
+
+                  <div id="plaqueOne" class="selectionItem plaqueSelectionItem active">
+                    <div class="selectionItemImage" style="background-image: url(images/1.jpg);"></div>
+                  </div>
+                  <!-- <div id="plaqueTwo" class="selectionItem plaqueSelectionItem">
+                  <div class="selectionItemImage" style="background-image: url(images/2.jpg);"></div>
+                </div>
+                <div id="plaqueThree" class="selectionItem plaqueSelectionItem">
+                  <div class="selectionItemImage" style="background-image: url(images/3.jpg);"></div>
+                </div> -->
+
+                </div>
+
+                <!-- SELECTION CONTAINER PHOTO PLAQUE SECTION -->
+                <div id="photoPlaqueSelectionContainer" class="selectionContainer" style="flex-wrap: nowrap;">
+                  <div id="photoPlaqueSelectionTypeTitle" class="selectionTypeTitle" style="width: 50%;">Upload a photo
+                    plaque</div>
+                  <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+                    <!-- <input type="file" id="photoPlaqueInput" accept="image/*"> -->
+                    <label htmlFor="photoPlaqueInput" id="photoPlaqueInputLabel">
+                      Upload
+                      <input id="photoPlaqueInput" type="file" accept="image/*" />
+                    </label>
+                  </div>
+                </div>
+
+                <!-- SELECTION CONTAINER PLAQUE BACKGROUND COLOR SECTION -->
+                <div id="plaqueBackgroundColorSelectionContainer" class="selectionContainer" style="flex-wrap: nowrap;">
+                  <div id="plaqueBackgroundColorSelectionTypeTitle" class="selectionTypeTitle" style="width: 50%;">
+                    Choose
+                    a
+                    background color</div>
+                  <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+                    <input type="color" id="plaqueBackgroundColorInput">
+                  </div>
+                </div>
+
+                <!-- SELECTION CONTAINER PLAQUE SCALE SECTION -->
+                <div id="plaqueScaleSelectionContainer" class="selectionContainer" style="flex-wrap: nowrap;">
+                  <div id="plaqueScaleSelectionTypeTitle" class="selectionTypeTitle" style="width: 50%;">Scale image
+                  </div>
+                  <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+                    <input type="range" id="plaqueScaleInput" min="0.1" max="2" step="0.05" value="1">
+                    <div id="plaqueScaleValue" class="selectionSliderItemValue">1</div>
+                  </div>
+                </div>
+
+                <!-- SELECTION CONTAINER PLAQUE ROTATION SECTION -->
+                <div id="plaqueRotationSelectionContainer" class="selectionContainer" style="flex-wrap: nowrap;">
+                  <div id="plaqueRotationSelectionTypeTitle" class="selectionTypeTitle" style="width: 50%;">Rotation
+                    image
+                  </div>
+                  <div style="width: 50%; display: flex; justify-content: center; align-items: center;">
+                    <input type="range" id="plaqueRotationInput" min="0" max="360" step="10" value="180">
+                    <div id="plaqueRotationValue" class="selectionSliderItemValue">180°</div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+
+            <!-- TEXT -->
+            <div id="menuContentText" class="menuContentSection">
+              <div id="menuContentTextHeader" class="menuContentSectionHeader">TEXT</div>
+
+              <div id="menuContentTextBody" class="menuContentSectionBody">
+
+                <!-- SELECTION CONTAINER font SECTION -->
+                <div id="fontFamilySelectionContainer" class="selectionContainer">
+
+                  <div id="textFamilySelectionTypeTitle" class="selectionTypeTitle">Choose a font family</div>
+
+                  <div id="fontOne" class="fontSelectionItem active" data-value="Times New Roman">
+                    <div class="fontTitle">Times New Roman</div>
+                  </div>
+                  <div id="fontTwo" class="fontSelectionItem" data-value="Calibri">
+                    <div class="fontTitle">Calibri</div>
+                  </div>
+                  <div id="fontThree" class="fontSelectionItem" data-value="Garamond">
+                    <div class="fontTitle">Garamond</div>
+                  </div>
+
+                </div>
+
+                <!-- SELECTION CONTAINER font style SECTION -->
+                <div id="fontStyleSelectionContainer" class="selectionContainer">
+
+                  <div id="fontStyleSelectionTypeTitle" class="selectionTypeTitle">Choose a font style</div>
+
+                  <div id="fontStyleOne" class="fontStyleSelectionItem active" data-value="normal">
+                    <div class="fontTitle">Normal</div>
+                  </div>
+                  <div id="fontStyleTwo" class="fontStyleSelectionItem" data-value="italic">
+                    <div class="fontTitle">Italic</div>
+                  </div>
+                  <div id="fontStyleThree" class="fontStyleSelectionItem" data-value="bold">
+                    <div class="fontTitle">Bold</div>
+                  </div>
+
+                </div>
+
+                <!-- SELECTION CONTAINER FOR TEXT COLOR SECTION -->
+                <div id="textColorSelectionContainer" class="selectionContainer">
+
+                  <div id="textColorSelectionTypeTitle" class="selectionTypeTitle">Select text color</div>
+
+                  <div class="selectionItemContainer">
+                    <div id="bronzeColor" class="selectionItem textColorSelectionItem active" data-value="Bronze Color">
+                      <div class="selectionItemImage" style="background-color: #CD7F32;"></div>
+                    </div>
+                    <div class="selectionItemTitle">Bronze</div>
+                  </div>
+
+                  <div class="selectionItemContainer">
+                    <div id="aluminumColor" class="selectionItem textColorSelectionItem" data-value="Aluminum Color">
+                      <div class="selectionItemImage" style="background-color: #bbbfc2;"></div>
+                    </div>
+                    <div class="selectionItemTitle">Aluminum</div>
+                  </div>
+                  
+                </div>
+
+                <!-- TYPE TEXT SECTION -->
+                <div id="textLinesSelectionContainer" class="selectionContainer">
+                  <div id="textLinesSelectionTypeTitle" class="selectionTypeTitle">Type text (maximum 10 rows, min font size 20, max font size 100)</div>
+
+                  <div style="width: 100%; display: flex; flex-direction: column; gap: 5px;">
+                    <div class="typeTextInputLine">
+                      <span style="width: 30px;"></span>
+                      <span style="width: 72%;">Text row</span>
+                      <span style="width: 8%;">Font size</span>
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 1:</span>
+                      <input type="text" id="typeTextInput1" class="typeTextInput" placeholder="Enter text for line 1">
+                      <input type="number" id="typeTextInput1FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 2:</span>
+                      <input type="text" id="typeTextInput2" class="typeTextInput" placeholder="Enter text for line 2">
+                      <input type="number" id="typeTextInput2FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 3:</span>
+                      <input type="text" id="typeTextInput3" class="typeTextInput" placeholder="Enter text for line 3">
+                      <input type="number" id="typeTextInput3FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 4:</span>
+                      <input type="text" id="typeTextInput4" class="typeTextInput" placeholder="Enter text for line 4">
+                      <input type="number" id="typeTextInput4FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 5:</span>
+                      <input type="text" id="typeTextInput5" class="typeTextInput" placeholder="Enter text for line 5">
+                      <input type="number" id="typeTextInput5FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 6:</span>
+                      <input type="text" id="typeTextInput6" class="typeTextInput" placeholder="Enter text for line 6">
+                      <input type="number" id="typeTextInput6FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 7:</span>
+                      <input type="text" id="typeTextInput7" class="typeTextInput" placeholder="Enter text for line 7">
+                      <input type="number" id="typeTextInput7FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 8:</span>
+                      <input type="text" id="typeTextInput8" class="typeTextInput" placeholder="Enter text for line 8">
+                      <input type="number" id="typeTextInput8FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 9:</span>
+                      <input type="text" id="typeTextInput9" class="typeTextInput" placeholder="Enter text for line 9">
+                      <input type="number" id="typeTextInput9FontSize" class="typeTextInputFontSize">
+                    </div>
+                    <div class="typeTextInputLine">
+                      <div class="fontSizeWarning"></div>
+                      <span>Line 10:</span>
+                      <input type="text" id="typeTextInput10" class="typeTextInput"
+                        placeholder="Enter text for line 10">
+                      <input type="number" id="typeTextInput10FontSize" class="typeTextInputFontSize">
+                    </div>
+                  </div>
+
+                </div>
+
+                <div style="width: 100%; height: 50px;"></div>
+
+              </div>
+
+            </div>
+            <!--  -->
+          </div>
+        </div>
+
+        <div id="menuContentBottomMargin"></div>
+
+        <!-- PRICE CALCULATOR -->
+        <div id="priceCalculatorContainer">
+
+
+          <div id="priceCalculatorBodyContainer" class="priceCalculatorBodyContainer">
+            <div id="priceCalculatorBody" class="priceCalculatorBody">
+
+              <div id="priceCalculatorBodyHeader" class="priceCalculatorBodyHeader">
+                <div id="priceCalculatorBodyHeaderText">Cost Breakdown</div>
+                <div id="priceCalculatorBodyHeaderButtonContainer">
+                  <div id="priceCalculatorBodyHeaderButton">ORDER</div>
+                </div>
+              </div>
+
+              <div class="priceCalculatorItem">
+                <div class="priceCalculatorItemData">
+                  <div id="memorialPriceName" class="priceCalculatorItemName">Memorial (Option 1)</div>
+                  <div id="memorialPriceDescription" class="priceCalculatorItemDescription">Medium size memorial</div>
+                </div>
+                <div class="priceCalculatorItemPrice">
+                  <div id="memorialPriceValue" class="priceCalculatorItemPriceValue">$0.00</div>
+                </div>
+              </div>
+
+              <div class="priceCalculatorItem">
+                <div class="priceCalculatorItemData">
+                  <div id="materialPriceName" class="priceCalculatorItemName">Material (Charcoal Grey)</div>
+                  <div id="materialPriceDescription" class="priceCalculatorItemDescription">130% of base</div>
+                </div>
+                <div class="priceCalculatorItemPrice">
+                  <div id="materialPriceValue" class="priceCalculatorItemPriceValue">$0.00</div>
+                </div>
+              </div>
+
+              <div class="priceCalculatorItem">
+                <div class="priceCalculatorItemData">
+                  <div id="vasePriceName" class="priceCalculatorItemName">Vase (Option 1)</div>
+                  <div id="vasePriceDescription" class="priceCalculatorItemDescription">Small size memorial</div>
+                </div>
+                <div class="priceCalculatorItemPrice">
+                  <div id="vasePriceValue" class="priceCalculatorItemPriceValue">$0.00</div>
+                </div>
+              </div>
+
+              <div class="priceCalculatorItem">
+                <div class="priceCalculatorItemData">
+                  <div id="photoPlaquePriceName" class="priceCalculatorItemName">Ceramic Photo Plaque</div>
+                  <div id="photoPlaquePriceDescription" class="priceCalculatorItemDescription">High quality ceramic
+                    photo permanently fused</div>
+                </div>
+                <div class="priceCalculatorItemPrice">
+                  <div id="photoPlaquePriceValue" class="priceCalculatorItemPriceValue">$0.00</div>
+                </div>
+              </div>
+
+              <div class="priceCalculatorItem">
+                <div class="priceCalculatorItemData">
+                  <div id="textPriceName" class="priceCalculatorItemName">Text</div>
+                  <div id="textPriceDescription" class="priceCalculatorItemDescription">Text</div>
+                </div>
+                <div class="priceCalculatorItemPrice">
+                  <div id="textPriceValue" class="priceCalculatorItemPriceValue">$300.00</div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div id="priceCalculatorFooter" class="priceCalculatorFooter">
+            <div id="totalCostContainer">
+              <div id="priceArrowIconContainer">
+                <div id="priceArrowIcon" style="background-image: url(images/arrowRed.png);"></div>
+              </div>
+              <div id="totalCostTitle">Total Cost:</div>
+              <div id="totalCostValue">$0.00</div>
+            </div>
+          </div>
+
+        </div>
+
+
+        <!-- END PRICE CALCULATOR -->
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div id="fpsContainer">
+    <div id="fpsValue">FPS: 0</div>
+  </div>
+
+
+</body>
+
+</html>
