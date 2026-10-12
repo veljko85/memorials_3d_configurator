@@ -1,0 +1,94 @@
+{
+    "gravestones": [
+        {
+            "id": "1",
+            "name": "Memorial 1",
+            "description": "Medium size memorial",
+            "glb": "Gravestone 1.glb",
+            "colors": [
+                "Black",
+                "White",
+                "Gray"
+            ],
+            "price": 1600,
+            "cameraPosition": [-1.45, 0.46, 3.11],
+            "cameraTargetPosition": [0, 0.41, 0],
+            "screenshotCameraPosition": [-1.05, 0.46, 1.89]
+        },
+        {
+            "id": "2",
+            "name": "Memorial 2",
+            "description": "Medium size memorial",
+            "glb": "Gravestone 2.glb",
+            "colors": [
+                "Black",
+                "White",
+                "Gray"
+            ],
+            "price": 1400,
+            "cameraPosition": [-1.45, 0.46, 3.11],
+            "cameraTargetPosition": [0, 0.41, 0],
+            "screenshotCameraPosition": [-1.05, 0.46, 1.89]
+        },
+        {
+            "id": "3",
+            "name": "Memorial 3",
+            "description": "Full length memorial",
+            "glb": "Gravestone 3.glb",
+            "colors": [
+                "Black",
+                "White",
+                "Gray"
+            ],
+            "price": 2500,
+            "cameraPosition": [-1.27, 1.03, 3.11],
+            "cameraTargetPosition": [0.2, 0.25, 0],
+            "screenshotCameraPosition": [-1.25, 1.03, 2.80]
+        }
+    ],
+    "vases": [
+        {
+            "id": "1",
+            "name": "No Vase",
+            "description": "No vase",
+            "glb": null,
+            "price": 0,
+            "cameraPosition": null,
+            "cameraTargetPosition": null
+        },
+        {
+            "id": "2",
+            "name": "Vase 1",
+            "description": "Small vase",
+            "glb": "Vase_1.glb",
+            "price": 400,
+            "cameraPosition": [-1.79, 1.26, 3.33],
+            "cameraTargetPosition": [0, 0.41, 0]
+        }
+    ],
+    "materials": {  
+        "albedo_textures": [
+            {
+                "id": "1",
+                "name": "Charcoal Grey Granite",
+                "description": "130% of base",
+                "url": "charcoal_grey_granite_albedo.jpg",
+                "price": 360
+            },
+            {
+                "id": "2",
+                "name": "Blue Perl Granite",    
+                "description": "150% of base",
+                "url": "blue_perl_granite_albedo.jpg",
+                "price": 420
+            },
+            {
+                "id": "3",
+                "name": "Black Pearl Granite",
+                "description": "170% of base",
+                "url": "black_pearl_granite_albedo.jpg",
+                "price": 580
+            }
+        ]
+    }
+}
